@@ -1,0 +1,146 @@
+/* Layout */
+/* Colors */
+/* Image paths */
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Varela|Open+Sans:400,600|Merriweather|Lato:900);
+.ra-company-logo {
+  height: 70px;
+  width: 150px;
+  display: inline-block;
+}
+.ra-company-logo:before {
+  background: #fff;
+  border-radius: 100%;
+  content: '';
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+}
+.ra-company-logo:after {
+  color: #fff;
+  content: 'Company Logo';
+  display: inline-block;
+  font-size: 1.0em;
+  width: 0;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+}
+.ra-page-headline {
+  color: #fff;
+  display: block;
+  font-family: 'Merriweather', serif;
+  font-size: 1.75em;
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+h1 {
+  border-bottom: solid 1px #008c6a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0px 0 15px;
+}
+#ra-header {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+#ra-header-body-wrapper {
+  background: url('../images/ra-header-bg.jpg') center;
+  background-size: auto 100%;
+}
+#ra-header-body-wrapper #ra-header-main {
+  background: rgba(33, 70, 0, 0.8);
+  border-radius: 0;
+  height: 55%;
+  margin: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar-top-container {
+  border-bottom: solid 1px #fff;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar {
+  float: right;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a {
+  color: #fff;
+  font-family: 'Varela', sans-serif;
+  padding: 10px 15px;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:hover,
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:focus,
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:active {
+  background: #8eb903;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a .caret {
+  display: none;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu {
+  background: #282828;
+  padding: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu a:hover {
+  background: none;
+  color: #8eb903;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar-top li a {
+  margin-top: 9px;
+}
+#ra-header-body-wrapper #ra-header-headline {
+  height: 45%;
+}
+#ra-header-top {
+  background: #282828;
+  height: 25px;
+  text-align: right;
+}
+#ra-header-top .ra-header-top-link {
+  color: #87888d;
+  display: inline-block;
+  padding: 0 10px;
+  font-family: 'Lato', arial black;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#ra-header-top .ra-header-top-link:hover {
+  background: #8eb903;
+  color: #fff;
+  text-decoration: none;
+}
+#ra-header-breadcrumb .breadcrumb > li + li:before {
+  content: '>';
+  color: #4a4d56;
+}
+#ra-header-breadcrumb .breadcrumb {
+  background: none;
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+#ra-header-breadcrumb .breadcrumb .active {
+  color: #598527;
+}
+#ra-header-breadcrumb .breadcrumb a {
+  color: #4a4d56;
+}
+#ra-body {
+  color: #4a4d56;
+}
+div,
+header,
+body,
+footer,
+nav {
+  /*box-shadow: inset 0 0 1px 1px red;*/
+}

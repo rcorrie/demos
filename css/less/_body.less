@@ -1,0 +1,114 @@
+#ra-body{
+    color: @body-font-color;
+    background: @body-wave-bg bottom center repeat-x;
+}
+
+#ra-carousel{
+    .ra-slide{
+        background-position: center;
+        background-size: cover;
+        height:330px;
+        width:100%;
+        &.slide-1{
+            background-image: url('images/ra-slider-1.jpg');
+        }
+        &.slide-2{
+            background-image: url('images/ra-slider-2.jpg');
+        }
+        &.slide-3{
+            background-image: url('images/ra-slider-3.jpg');
+        }
+    }
+    .carousel-caption{
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 40%;
+        background: rgba(0,0,0,0.65);
+        padding: 33px;
+        font-size: 1.2em;
+        text-align: left;
+        line-height: 22px;
+
+        button{
+            display: block;
+            margin: 30px 0 0;
+            background: none;
+            color: #fff;
+            border: solid 3px #fff;
+            padding: 2px 30px;
+            text-transform: uppercase;
+        }
+    }
+    .carousel-indicators{
+        left: 60px;
+        bottom: 30px;
+        li{
+            background: #fff;
+            border: 0;
+            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3), 1px 1px 1px rgba(0,0,0,0.3);
+            width: 13px;
+            height: 13px;
+            background: #fff;
+            &.active, &.next{
+                background:#777;
+            }
+        }
+    }
+}
+
+
+#ra-main-sidebar{
+    .ra-sidebar-item{
+        margin: 0  0 30px 0;
+    }
+}
+
+#ra-content-listing{
+    margin: 40px 0;
+    .ra-content-item{
+            min-height: 165px;
+    border-bottom: solid 1px #ddd;
+    margin: 0 0 20px;
+    .thumb{
+            float: left;
+    margin: 0 20px 15px 0;
+    }
+        .title{
+                font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 1.5em;
+    color: green;
+    padding:10px 0;
+    display:block;
+        }
+        p{
+                margin: 5px 0 15px;
+    line-height: 22px;
+        }
+        .cta{
+                color: limegreen;
+    font-weight: bold;
+    display:block;
+    margin-bottom:20px;
+        }
+    }
+}
+
+@media (max-width: @screen-sm-min) {
+    #ra-body{
+        .ra-slide{
+                height: 260px!important;
+        }
+        .carousel-indicators{
+            left:50%
+        }
+        .carousel-caption{
+                width: 100%!important;
+    text-align: center!important;
+    button{
+        margin:30px auto!important;
+    }
+        }
+    }
+}

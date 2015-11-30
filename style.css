@@ -1,0 +1,433 @@
+@charset "utf-8";
+/*
+Theme Name: 
+Description: 
+Author: Rivers Agency
+Author URI: http://riversagency.com/
+Version: 1.0
+*/
+/* CSS Section Imports
+----------------------------------------------- */
+/* Meyers Reset Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+----------------------------------------------- */
+@import url("css/meyer-reset.css");
+/* Rivers Reset - takes care of some of the more agressive Meyer's reset rules
+----------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Varela|Open+Sans:400,600|Merriweather|Lato:900);
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+a {
+  cursor: pointer;
+}
+sup {
+  font-size: em;
+  vertical-align: top;
+}
+body {
+  font-size: 90%;
+  font-family: 'Open Sans', sans-serif;
+}
+html,
+body {
+  -webkit-text-size-adjust: none;
+  height: 100%;
+  position: relative;
+}
+.ra_clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+table * {
+  vertical-align: top;
+}
+/*-----------------------------------------------
+  Start Custom Theme CSS Below
+----------------------------------------------- */
+/* Layout */
+/* Colors */
+/* Image paths */
+/* Fonts */
+h1 {
+  border-bottom: solid 1px #008c6a;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0 0 25px;
+  padding: 0px 0 20px;
+}
+.ra-company-logo {
+  height: 70px;
+  width: 150px;
+  display: inline-block;
+}
+.ra-company-logo:before {
+  background: #fff;
+  border-radius: 100%;
+  content: '';
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  vertical-align: middle;
+}
+.ra-company-logo:after {
+  color: #fff;
+  content: 'Company Logo';
+  display: inline-block;
+  font-size: 1.0em;
+  width: 0;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+}
+.ra-page-headline {
+  color: #fff;
+  display: block;
+  font-family: 'Merriweather', serif;
+  font-size: 1.75em;
+  padding: 20px 0;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.ra-search-form {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.ra-search-form .ra-search-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 40px 0 10px;
+  display: block;
+  font-size: 0.7em;
+  line-height: 14px;
+  outline-width: 0;
+  border: solid 1px #ddd;
+}
+.ra-search-form .ra-search-submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  border: 0;
+  background: #598527 url('images/ra-icon-search.png') no-repeat center;
+  background-size: 40% auto;
+}
+.ra-submenu .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 20px 0 0;
+  display: block;
+}
+.ra-submenu ul {
+  border-top: solid 1px #ddd;
+  margin: 10px 0;
+}
+.ra-submenu ul li {
+  border-bottom: solid 1px #ddd;
+  padding: 10px 0;
+  font-size: 0.9em;
+  color: #598527;
+}
+.ra-submenu ul li a {
+  color: #4a4d56;
+}
+.ra-submenu ul li:before {
+  display: inline-block;
+  content: '';
+  background: url('images/ra-pointer-right.png') no-repeat center;
+  background-size: 100%;
+  width: 4px;
+  height: 7px;
+  vertical-align: middle;
+  margin: 0 15px 0 0;
+}
+.ra-submenu ul li.child {
+  padding-left: 15px;
+}
+.ra-questions-box {
+  background: #598527;
+  color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+.ra-questions-box .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.ra-questions-box p {
+  margin: 10px 0;
+  font-weight: 100;
+}
+.ra-questions-box .cta {
+  font-weight: bold;
+  color: #fff;
+}
+.ra-mobile-menu {
+  font-size: 2em;
+  color: #fff;
+  margin: 15px 0px 0 0;
+  z-index: 99;
+  position: relative;
+}
+#ra-header {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+#ra-header-body-wrapper {
+  background: url('images/ra-header-bg.jpg') center;
+  background-size: auto 100%;
+}
+#ra-header-body-wrapper #ra-header-main {
+  background: rgba(33, 70, 0, 0.8);
+  border-radius: 0;
+  height: 55%;
+  margin: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar-top-container {
+  border-bottom: solid 1px #fff;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar {
+  float: right;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a {
+  color: #fff;
+  font-family: 'Varela', sans-serif;
+  padding: 10px 15px;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:hover,
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:focus,
+#ra-header-body-wrapper #ra-header-main .ra-navbar a:active {
+  background: #8eb903;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar a .caret {
+  display: none;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu {
+  background: #282828;
+  padding: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown-menu a:hover {
+  background: none;
+  color: #8eb903;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+#ra-header-body-wrapper #ra-header-main .ra-navbar-top li a {
+  margin-top: 9px;
+}
+#ra-header-body-wrapper #ra-header-headline {
+  height: 45%;
+}
+#ra-header-top {
+  background: #282828;
+  height: 25px;
+  text-align: right;
+}
+#ra-header-top .ra-header-top-link {
+  color: #87888d;
+  display: inline-block;
+  padding: 0 10px;
+  font-family: 'Lato', arial black;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+#ra-header-top .ra-header-top-link:hover {
+  background: #8eb903;
+  color: #fff;
+  text-decoration: none;
+}
+#ra-header-breadcrumb .breadcrumb > li + li:before {
+  content: '>';
+  color: #4a4d56;
+}
+#ra-header-breadcrumb .breadcrumb {
+  background: none;
+  font-size: 0.8em;
+  padding: 10px 0;
+}
+#ra-header-breadcrumb .breadcrumb .active {
+  color: #598527;
+}
+#ra-header-breadcrumb .breadcrumb a {
+  color: #4a4d56;
+}
+@media (max-width: 768px) {
+  #ra-header-body-wrapper #ra-header-main .ra-navbar {
+    float: none!important;
+  }
+  #ra-header-body-wrapper #ra-header-main .dropdown-menu {
+    position: relative!important;
+    background: none!important;
+    display: block!important;
+    float: none!important;
+    box-shadow: none!important;
+    border: 0!important;
+    padding-left: 20px!important;
+  }
+  #ra-header-body-wrapper #ra-header-main .ra-navbar-top-container {
+    border: none;
+  }
+}
+#ra-body {
+  color: #4a4d56;
+  background: url('images/ra-wave-bg.jpg') bottom center repeat-x;
+}
+#ra-carousel .ra-slide {
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  width: 100%;
+}
+#ra-carousel .ra-slide.slide-1 {
+  background-image: url('images/ra-slider-1.jpg');
+}
+#ra-carousel .ra-slide.slide-2 {
+  background-image: url('images/ra-slider-2.jpg');
+}
+#ra-carousel .ra-slide.slide-3 {
+  background-image: url('images/ra-slider-3.jpg');
+}
+#ra-carousel .carousel-caption {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 33px;
+  font-size: 1.2em;
+  text-align: left;
+  line-height: 22px;
+}
+#ra-carousel .carousel-caption button {
+  display: block;
+  margin: 30px 0 0;
+  background: none;
+  color: #fff;
+  border: solid 3px #fff;
+  padding: 2px 30px;
+  text-transform: uppercase;
+}
+#ra-carousel .carousel-indicators {
+  left: 60px;
+  bottom: 30px;
+}
+#ra-carousel .carousel-indicators li {
+  border: 0;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3), 1px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 13px;
+  height: 13px;
+  background: #fff;
+}
+#ra-carousel .carousel-indicators li.active,
+#ra-carousel .carousel-indicators li.next {
+  background: #777;
+}
+#ra-main-sidebar .ra-sidebar-item {
+  margin: 0  0 30px 0;
+}
+#ra-content-listing {
+  margin: 40px 0;
+}
+#ra-content-listing .ra-content-item {
+  min-height: 165px;
+  border-bottom: solid 1px #ddd;
+  margin: 0 0 20px;
+}
+#ra-content-listing .ra-content-item .thumb {
+  float: left;
+  margin: 0 20px 15px 0;
+}
+#ra-content-listing .ra-content-item .title {
+  font-family: 'Merriweather';
+  font-weight: bold;
+  font-size: 1.5em;
+  color: green;
+  padding: 10px 0;
+  display: block;
+}
+#ra-content-listing .ra-content-item p {
+  margin: 5px 0 15px;
+  line-height: 22px;
+}
+#ra-content-listing .ra-content-item .cta {
+  color: limegreen;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #ra-body .ra-slide {
+    height: 260px!important;
+  }
+  #ra-body .carousel-indicators {
+    left: 50%;
+  }
+  #ra-body .carousel-caption {
+    width: 100%!important;
+    text-align: center!important;
+  }
+  #ra-body .carousel-caption button {
+    margin: 30px auto!important;
+  }
+}
+#ra-footer {
+  background: #282828;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 0.7em;
+}
+#ra-footer .ra-footer-links {
+  line-height: 27px;
+}
+#ra-footer .ra-footer-links .copyright {
+  display: inline-block;
+  margin-right: 20px;
+}
+#ra-footer .ra-footer-links a {
+  text-decoration: underline;
+  display: inline-block;
+  color: #fff;
+  padding: 0 10px;
+}
+#ra-footer .ra-social a {
+  background: #fff;
+  color: #282828;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 26px;
+  border-radius: 100%;
+  font-size: 1.4em;
+  margin: 0 2px;
+}
+#ra-footer .ra-social a:hover {
+  background: #8eb903;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  #ra-footer {
+    text-align: center;
+  }
+}
